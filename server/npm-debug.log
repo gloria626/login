@@ -1,0 +1,47 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\apple\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'vue-resource',
+1 verbose cli   '-save' ]
+2 info using npm@3.0.0
+3 info using node@v4.4.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly rollbackFailedOptional Starting
+8 silly rollbackFailedOptional Finishing
+9 silly runTopLevelLifecycles Starting
+10 silly runTopLevelLifecycles Finishing
+11 silly install saveToDependencies
+12 verbose stack Error: Missing required argument #2
+12 verbose stack     at exports.saveRequested (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\lib\install\save.js:18:3)
+12 verbose stack     at Object.Installer.saveToDependencies (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\lib\install.js:502:3)
+12 verbose stack     at Array.<anonymous> (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+12 verbose stack     at LOOP (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+12 verbose stack     at C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+12 verbose stack     at Object.Installer.finishTracker (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\lib\install.js:279:3)
+12 verbose stack     at Array.<anonymous> (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+12 verbose stack     at LOOP (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+12 verbose stack     at C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+12 verbose stack     at Object.Installer.runTopLevelLifecycles (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\lib\install.js:475:28)
+13 verbose cwd C:\model\myfirstNode\server
+14 error Windows_NT 6.1.7601
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\apple\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "vue-resource" "-save"
+16 error node v4.4.0
+17 error npm  v3.0.0
+18 error code EMISSINGARG
+19 error typeerror Error: Missing required argument #2
+19 error typeerror     at exports.saveRequested (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\lib\install\save.js:18:3)
+19 error typeerror     at Object.Installer.saveToDependencies (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\lib\install.js:502:3)
+19 error typeerror     at Array.<anonymous> (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+19 error typeerror     at LOOP (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+19 error typeerror     at C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+19 error typeerror     at Object.Installer.finishTracker (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\lib\install.js:279:3)
+19 error typeerror     at Array.<anonymous> (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+19 error typeerror     at LOOP (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+19 error typeerror     at C:\Users\apple\AppData\Roaming\npm\node_modules\npm\node_modules\slide\lib\chain.js:18:7
+19 error typeerror     at Object.Installer.runTopLevelLifecycles (C:\Users\apple\AppData\Roaming\npm\node_modules\npm\lib\install.js:475:28)
+19 error typeerror This is an error with npm itself. Please report this error at:
+19 error typeerror     <http://github.com/npm/npm/issues>
+20 verbose exit [ 1, true ]
