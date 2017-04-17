@@ -1,0 +1,40 @@
+link(href="/libs/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+script(src="/libs/jquery/dist/jquery.min.js")
+script(src="/libs/bootstrap/dist/js/bootstrap.min.js")
+block content
+  .container
+    .row
+      form.form-horizontal(method="post", action="/admin/student/new")
+        input(type="hidden", name="student[_id]", value="#{student._id}")
+        //- 隐藏表单域，用来更新电影数据，存储电影ID
+        .form-group
+          label.col-sm-2.control-label(for="inputTitle") 姓名
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="student[name]", value="#{student.title}")
+        .form-group
+          label.col-sm-2.control-label(for="inputDoctor") 基本状况
+          .col-sm-10
+            input#inputDoctor.form-control(type="text", name="student[info]", value="#{student.doctor}")
+        .form-group
+          label.col-sm-2.control-label(for="inputCountry") 电话
+          .col-sm-10
+            input#inputCountry.form-control(type="text", name="student[tel]", value="#{student.country}")
+        .form-group
+          label.col-sm-2.control-label(for="inputLanguage") 地址
+          .col-sm-10
+            input#inputLanguage.form-control(type="text", name="student[addr]", value="#{student.language}")
+        .form-group
+          label.col-sm-2.control-label(for="inputPoster") 旺旺号
+          .col-sm-10
+            input#inputPoster.form-control(type="text", name="student[wang]", value="#{student.poster}")
+        .form-group
+          label.col-sm-2.control-label(for="inputFlash") QQ号
+          .col-sm-10
+            input#inputFlash.form-control(type="text", name="student[qq]", value="#{student.flash}")
+        .form-group
+          label.col-sm-2.control-label(for="inputYear") 下单时间
+          .col-sm-10
+            input#inputYear.form-control(type="text", name="student[orderTime]", value="#{student.year}")
+        .form-group
+          .col-sm-offset-2.col-sm-10
+          button.btn.btn-default(type="submit") 添加

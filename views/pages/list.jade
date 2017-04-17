@@ -1,0 +1,36 @@
+link(href="/libs/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet")
+script(src="/libs/jquery/dist/jquery.min.js")
+script(src="/libs/bootstrap/dist/js/bootstrap.min.js")
+block content
+  .container
+    .row
+      table.table.table-hover.table-bordered
+        thead
+          tr
+            th 序号
+            th 姓名
+            th 基本状况
+            th 电话
+            th 地址
+            th 旺旺号
+            th QQ号
+            th 下单时间
+            th 操作
+            th 操作
+            th 操作
+        tbody
+          each item in students
+            tr(class="item-id-#{item._id}")
+              td #{item._id}
+              td #{item.name}
+              td #{item.info}
+              td #{item.tel}
+              td #{item.addr}
+              td #{item.wang}
+              td #{item.qq}
+              td #{item.orderTime}
+              td: a(target="_blank", href="../movie/#{item._id}") 查看
+              td: a(target="_blank", href="../admin/update/#{item._id}") 修改
+              td
+                button.btn.btn-danger.del(type="button", data-id="#{item._id}") 删除
+  
